@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="taskList">
+    <button id="followInstagram" onclick="followInstagram()">Sugestões</button>
+    <!-- Botão para alternar entre o Modo Escuro e o Modo Claro -->
+    <button id="toggleDarkMode" onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+    
+    <!-- Cabeçalho da Lista de Tarefas -->
+    <header>Lista de Tarefas</header>
+    <!-- Lista de tarefas em andamento -->
+    <ul id="tasks"></ul>
+    <!-- Lista de tarefas concluídas -->
+    <ul id="completedTasks"></ul>
+    <!-- Formulário para adicionar novas tarefas -->
+    <div>
+      <input type="text" id="newTask" placeholder="Nova tarefa (limite de 55 caracteres)">
+      <select id="priority">
+        <option value="low">Baixa</option>
+        <option value="medium">Média</option>
+        <option value="high">Alta</option>
+      </select>
+      <button style="width: 530px;" onclick="addTask()">Adicionar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
